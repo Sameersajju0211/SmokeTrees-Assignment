@@ -1,0 +1,106 @@
+/* General container styling */
+.user-page-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px;
+    background-color: #f0f4f8; /* Light background color for the page */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  /* Page title styling */
+  .list-heading {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(41, 41, 41);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    animation: fadeIn 1s ease-out forwards;
+  }
+  
+  /* User list container styling */
+  .user-lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Individual list item styling */
+  .list-item {
+    margin: 20px;
+    width: 220px;
+    height: 140px;
+    background-color: #ffffff; /* Card background */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    transform: scale(1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    animation: slideIn 0.5s ease-out forwards;
+  }
+  
+  /* Card styling */
+  .user-card {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Username text styling */
+  .user-name {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+    color: rgb(63, 63, 63);
+    margin-bottom: 8px;
+  }
+  
+  /* Address text styling */
+  .user-address {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: gray;
+    font-size: 15px;
+  }
+  
+  /* Hover effects for list item and card */
+  .list-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .user-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Fade in effect for the heading */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Slide in effect for the cards */
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
